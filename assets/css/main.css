@@ -1,0 +1,9 @@
+:root {
+  --mainClr: rgb(200, 200, 200);
+  --font: Arial, Helvetica, sans-serif;
+  --buttonClr: rgba(160, 160, 160, 0.746); 
+  --buttonWidth: 75px;
+  --buttonLength: 75px;
+  --borderLine: solid rgba(0, 0, 0, 0.596);
+  --calcScreen: rgba(93, 93, 255, 0.685);
+}
