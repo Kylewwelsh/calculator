@@ -1,12 +1,15 @@
 const teacher = document.querySelector('.teacher')
 const bodyTeacher = document.querySelector('body')
 const lock = document.querySelector('.screen-lock')
+const head = document.querySelector ('head')
+const title = head.querySelector ('title')
 
 teacher.addEventListener (
   'click', () => {
     calculator.classList.add('teachers-coming')
     bodyTeacher.classList.add('teachers-coming-body')
     lock.classList.add('screen-lock-on')
+    title.innerHTML = ('LOCKED')
   }
 )
 
@@ -25,6 +28,7 @@ power.addEventListener (
     screenPower.classList.add('screen-on')
   }
 )
+
 
 const calculate = (n1, operator, n2) => {
   const firstNum = parseFloat(n1)
