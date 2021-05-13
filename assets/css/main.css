@@ -1,11 +1,16 @@
 :root {
   --mainClr: rgb(200, 200, 200);
   --font: Arial, Helvetica, sans-serif;
-  --buttonClr: rgba(160, 160, 160, 0.746); 
-  --buttonWidth: 75px;
-  --buttonLength: 75px;
-  --borderLine: solid rgba(0, 0, 0, 0.596);
+  --buttonClr: rgba(207, 207, 207, 0.746); 
+  --buttonWidth: 150px;
+  --buttonLength: 100px;
+  --border: solid rgb(0, 0, 0) 2px;
   --calcScreen: rgba(93, 93, 255, 0.685);
+  --fullWidth: 600px;
+  --fullLength: 200px;
+  --buttonsLrg: 3rem;
+  --buttonsMdm: 2rem;
+  --buttonsSml: 1.25rem
 }
 
 body {
@@ -15,11 +20,129 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, var(--buttonLength));
-  grid-template-rows: repeat(7, var(--buttonWidth));
+  grid-template-columns: repeat(4, var(--buttonWidth));
+  grid-template-rows: repeat(8, var(--buttonLength));
+  border: solid grey 10px;
+  width: fit-content;
 }
 
 button {
+  background-color: var(--buttonClr);
+  border: var(--border);
   height: var(--buttonLength);
   width: var(--buttonWidth);
+  font-family: var(--font);
+  font-size: var(--buttonsSml);
+  cursor: pointer;
+}
+
+.screen {
+  background-color: var(--calcScreen);
+  width: var(--fullWidth);
+  height: var(--fullLength);
+  font-size: var(--buttonsLrg);
+
+  grid-column: 1;
+  grid-row: 1 / -8;
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.nine {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.add {
+  grid-column: 4;
+  grid-row: 3;
+  font-size: var(--buttonsMdm);
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.subtract {
+  grid-column: 4;
+  grid-row: 4;
+  font-size: var(--buttonsMdm);
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.multiply {
+  grid-column: 4;
+  grid-row: 5;
+  font-size: var(--buttonsMdm);
+}
+
+.decimal {
+  grid-column: 1;
+  grid-row: 6;
+  font-size: var(--buttonsLrg);
+}
+
+.zero {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.clear {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+.divide {
+  grid-column: 4;
+  grid-row: 6;
+  font-size: var(--buttonsMdm);
+}
+
+.calculate {
+  grid-column: 1;
+  grid-row: 7 / -3;
+  width: var(--fullWidth);
+  font-size: var(--buttonsLrg);
+}
+
+.teacher {
+  grid-column: 1;
+  grid-row: 8 / -2;
+  width: var(--fullWidth);
+  font-size: 3rem;
+  background-color: red;
+  font-size: var(--buttonsMdm);
 }
