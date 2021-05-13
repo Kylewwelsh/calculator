@@ -18,8 +18,9 @@ body {
   background-color: rgba(255, 218, 185, 0.267);
 }
 
-.grid-container {
+.calculator {
   display: grid;
+  margin: auto;
   grid-template-columns: repeat(4, var(--buttonWidth));
   grid-template-rows: repeat(8, var(--buttonLength));
   border: solid grey 10px;
