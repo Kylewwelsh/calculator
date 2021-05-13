@@ -160,12 +160,4 @@ keys.addEventListener('click', e => {
 
 });
 
-// const power = document.querySelector('.clear')
-
-// power.addEventListener(
-//   'click', () => {
-    
-//   }
-// )
-
   
