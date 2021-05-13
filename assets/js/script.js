@@ -10,7 +10,7 @@ calculatorButtons.addEventListener (
     const action = key.dataset.action
 
     if (!action) {
-      console.log('number key!')
+      console.log('number')
     }
 
     if (
@@ -19,7 +19,7 @@ calculatorButtons.addEventListener (
       action === 'multiply' ||
       action === 'divide'
     ) {
-      console.log('operator key!')
+      console.log('operator')
     }
 
     if (action === 'decimal') {
@@ -27,14 +27,14 @@ calculatorButtons.addEventListener (
     }
 
     if (action === 'clear') {
-      console.log('clear key!')
+      console.log('clear')
     }
 
     if (action === 'calculate') {
-      console.log('equal key!')
+      console.log('equal')
     }
 
-    
+
 
   }
 });
