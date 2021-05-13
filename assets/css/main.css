@@ -19,10 +19,7 @@ body {
 }
 
 .calculator {
-  display: grid;
   margin: auto;
-  grid-template-columns: repeat(4, var(--buttonWidth));
-  grid-template-rows: repeat(8, var(--buttonLength));
   border: solid grey 10px;
   width: fit-content;
 }
@@ -35,119 +32,157 @@ button {
   font-family: var(--font);
   font-size: var(--buttonsSml);
   cursor: pointer;
+  padding: 0;
 }
 
 .screen {
-  background-color: var(--calcScreen);
-  width: var(--fullWidth);
-  height: var(--fullLength);
-  font-size: var(--buttonsLrg);
+  background-color: black;
+}
 
-  grid-column: 1;
-  grid-row: 1 / -8;
+.calculatorButtons {
+  display: grid;
+  grid-template-columns: repeat(4, var(--buttonWidth));
+  grid-template-rows: repeat(6, var(--buttonLength)); 
 }
 
 .seven {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 1;
 }
 
 .eight {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 1;
 }
 
 .nine {
   grid-column: 3;
-  grid-row: 3;
+  grid-row: 1;
 }
 
 .add {
   grid-column: 4;
-  grid-row: 3;
-  font-size: var(--buttonsMdm);
+  grid-row: 1;
 }
 
 .four {
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 2;
 }
 
 .five {
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 2;
 }
 
 .six {
   grid-column: 3;
-  grid-row: 4;
+  grid-row: 2;
 }
 
-.subtract {
+.minus {
   grid-column: 4;
-  grid-row: 4;
-  font-size: var(--buttonsMdm);
+  grid-row: 2;
 }
 
 .one {
   grid-column: 1;
-  grid-row: 5;
+  grid-row: 3;
 }
 
 .two {
   grid-column: 2;
-  grid-row: 5;
+  grid-row: 3;
 }
 
 .three {
   grid-column: 3;
-  grid-row: 5;
+  grid-row: 3;
 }
 
 .multiply {
   grid-column: 4;
-  grid-row: 5;
-  font-size: var(--buttonsMdm);
+  grid-row: 3;
 }
 
 .decimal {
   grid-column: 1;
-  grid-row: 6;
-  font-size: var(--buttonsLrg);
+  grid-row: 4;
 }
 
 .zero {
   grid-column: 2;
-  grid-row: 6;
+  grid-row: 4;
 }
 
 .clear {
   grid-column: 3;
-  grid-row: 6;
-}
-
-.divide {
-  grid-column: 4;
-  grid-row: 6;
-  font-size: var(--buttonsMdm);
+  grid-row: 4;
+  background-color: rgba(255, 0, 0, 0.568);
 }
 
 .calculate {
-  grid-column: 1;
-  grid-row: 7 / -3;
+  grid-column: 1 / 4;
+  grid-row: 5;
   width: var(--fullWidth);
   font-size: var(--buttonsLrg);
 }
 
 .teacher {
-  grid-column: 1;
-  grid-row: 8 / -2;
+  grid-column: 1 / 4;
+  grid-row: 6;
   width: var(--fullWidth);
   font-size: 3rem;
   background-color: red;
   font-size: var(--buttonsMdm);
+  font-family: var(--font);
+  text-align: center;
+  cursor: pointer;
 }
 
 .calculatorButton {
   display: none;
+}
+
+.on {
+  background-color: rgba(9, 189, 9, 0.678);
+}
+
+.screen-on {
+  grid-template-columns: repeat(4, var(--buttonWidth));
+  grid-template-rows: repeat(2, var(--buttonLength));
+  width: var(--fullWidth);
+  height: var(--fullLength);
+  font-size: 6rem;
+  background-color: var(--calcScreen);
+  grid-column: 1 / 5;
+  grid-row: 1 / -1;
+}
+
+.teachers-coming {
+  display: none;
+}
+
+.teachers-coming-body {
+  background-color: black;
+}
+
+.screen-lock {
+  display: none;
+}
+
+.screen-lock-on {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-family: var(--font);
+  color: white;
+  margin-top: 16rem;
+}
+
+i {
+  color: white;
+  font-size: 6rem;
+  margin-bottom: 21.440px;
+  cursor: pointer;
 }
