@@ -147,3 +147,7 @@ button {
   background-color: red;
   font-size: var(--buttonsMdm);
 }
+
+.calculatorButton {
+  display: none;
+}
