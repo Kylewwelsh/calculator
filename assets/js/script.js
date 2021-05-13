@@ -1,7 +1,6 @@
 const teacher = document.querySelector('.teacher')
 const bodyTeacher = document.querySelector('body')
 const lock = document.querySelector('.screen-lock')
-const padlock = document.querySelector ('i')
 
 teacher.addEventListener (
   'click', () => {
@@ -11,7 +10,7 @@ teacher.addEventListener (
   }
 )
 
-padlock.addEventListener (
+lock.addEventListener (
   'click', () => {
     window.location.reload()
   }

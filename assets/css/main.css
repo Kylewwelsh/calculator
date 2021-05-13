@@ -177,12 +177,14 @@ button {
   align-items: center;
   font-family: var(--font);
   color: white;
+  width: fit-content;
+  margin: auto;
   margin-top: 16rem;
+  cursor: pointer;
 }
 
 i {
   color: white;
   font-size: 6rem;
   margin-bottom: 21.440px;
-  cursor: pointer;
 }
